@@ -1,61 +1,51 @@
-body{
-	font-family:Arial, sans-serif;
-	background-color:#f9f9f9;
-	text-align:center;
-	margin:0;
-	padding:20px;
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
 }
 
-.container{
-	max-width:500px;
-	margin:0;
+.container {
+  max-width: 400px;
+  margin: 50px auto;
 }
 
-#player-form{
-	padding:20px;
+.input-area {
+  margin-bottom: 20px;
 }
 
-input{
-	margin:10px;
-	padding:10px;
-	width:80%;
-	font-size:16px;
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 80%;
 }
 
-button{
-	padding:10px 20px;
-	font-size:16px;
-	cursor:pointer;
+button {
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-#game-board{
-	margin-top:20px;
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-.board{
-	display:grid;
-	grid-template-columns: repeat(3, 100px);
-	gap:5px;
-	justify-content:center;
-	margin-top:20px;
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #e5a0c6;
+  border: 2px solid #333;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.cell{
-	background-color:#fff;
-	border:2px solid #333;
-	font-size:36px;
-	width:100px;
-	height:100px;
-	line-height:100px;
-	cursor:pointer;
-	user-select:none;
-}
-
-.message{
-	font-size:20px;
-	font-weight:bold;
-}
-
-.hidden{
-	display:none;
+.message {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
